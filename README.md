@@ -55,13 +55,13 @@ The implementation follows the approved Figma prototype.
 
 ## 👥 Team
 
-**Team Name:** Elite Devs 
-**Team ID:** DEV-61 
+**Team Name:** Elite Devs <br>
+**Team ID:** DEV-61 <br>
 **Team Members:**
 - S.A.Dilmi Sandunika
 - Devini Thathsarani Paranavithana
-- Sewmini Samarasinghe 
-- **Competition:** Devthon 3.0 – University Category  
+- Sewmini Samarasinghe <br>
+**Competition:** Devthon 3.0 – University Category  
 
 
 ## 📦 Setup Instructions (Basic)
