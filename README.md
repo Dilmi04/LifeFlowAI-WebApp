@@ -61,7 +61,7 @@ The implementation follows the approved Figma prototype.
 - S.A.Dilmi Sandunika
 - Devini Thathsarani Paranavithana
 - Sewmini Samarasinghe 
-**Competition:** Devthon 3.0 – University Category  
+- **Competition:** Devthon 3.0 – University Category  
 
 
 ## 📦 Setup Instructions (Basic)
