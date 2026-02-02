@@ -1,0 +1,413 @@
+/* Request Monitoring Page - Exact Figma Design */
+
+.monitoring-page {
+  min-height: 100vh;
+  background: #F5F7FA;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.monitoring-header {
+  background: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.monitoring-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.monitoring-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.filter-tabs button {
+  flex: 1;
+  padding: 0.875rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #666;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-tabs button:hover {
+  background: #F5F7FA;
+}
+
+.filter-tabs button.active {
+  background: #E63946;
+  color: white;
+  box-shadow: 0 2px 8px rgba(230, 57, 70, 0.3);
+}
+
+/* Requests Table */
+.requests-table {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-bottom: 2rem;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 100px 180px 100px 80px 100px 100px 100px 140px 180px;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: #1D3557;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.table-body {
+  background: white;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 100px 180px 100px 80px 100px 100px 100px 140px 180px;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #E8EBED;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.table-row:hover {
+  background: #F9FAFB;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.request-id {
+  font-weight: 700;
+  color: #4A7C9E;
+  font-size: 0.9375rem;
+}
+
+.hospital-name-cell {
+  font-size: 0.875rem;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.blood-type-cell {
+  text-align: center;
+}
+
+.blood-badge {
+  background: linear-gradient(135deg, #E63946, #F25C69);
+  color: white;
+  padding: 0.375rem 0.875rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  display: inline-block;
+}
+
+.units-cell {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.status-cell {
+  text-align: center;
+}
+
+.status-badge {
+  padding: 0.375rem 0.875rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  display: inline-block;
+}
+
+.status-badge.active {
+  background: #D1F2EB;
+  color: #06D6A0;
+}
+
+.status-badge.fulfilled {
+  background: #E8F4F8;
+  color: #4A7C9E;
+}
+
+.status-badge.cancelled {
+  background: #E8EBED;
+  color: #999;
+}
+
+.priority-cell {
+  text-align: center;
+}
+
+.priority-badge {
+  padding: 0.375rem 0.875rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  display: inline-block;
+}
+
+.priority-badge.high {
+  background: #E63946;
+  color: white;
+}
+
+.priority-badge.medium {
+  background: #FFB703;
+  color: white;
+}
+
+.priority-badge.low {
+  background: #5FB89E;
+  color: white;
+}
+
+.time-cell {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.responses-cell {
+  font-size: 0.875rem;
+}
+
+.response-stats-mini {
+  display: flex;
+  gap: 0.625rem;
+  justify-content: center;
+}
+
+.accepted-mini {
+  color: #06D6A0;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.pending-mini {
+  color: #FFB703;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.declined-mini {
+  color: #E63946;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.btn-view {
+  padding: 0.5rem 1rem;
+  background: #4A7C9E;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.btn-view:hover {
+  background: #3A6280;
+  transform: translateY(-1px);
+}
+
+.btn-cancel {
+  padding: 0.5rem 1rem;
+  background: transparent;
+  color: #E63946;
+  border: 1px solid #E63946;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.btn-cancel:hover {
+  background: #E63946;
+  color: white;
+}
+
+/* Summary Cards */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.summary-card {
+  background: white;
+  padding: 1.75rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.summary-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.summary-icon.total {
+  background: linear-gradient(135deg, #4A7C9E, #3A6280);
+  color: white;
+}
+
+.summary-icon.time {
+  background: linear-gradient(135deg, #FFB703, #FFA500);
+  color: white;
+}
+
+.summary-icon.success {
+  background: linear-gradient(135deg, #06D6A0, #05C090);
+  color: white;
+}
+
+.summary-icon.donors {
+  background: linear-gradient(135deg, #E63946, #F25C69);
+  color: white;
+}
+
+.summary-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.summary-content {
+  flex: 1;
+}
+
+.summary-content h3 {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.summary-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.summary-change {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.summary-change.positive {
+  color: #06D6A0;
+}
+
+.summary-change.negative {
+  color: #E63946;
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 90px 150px 90px 70px 90px 90px 90px 120px 150px;
+    font-size: 0.8125rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 100px 150px 90px 80px 180px;
+    gap: 0.75rem;
+  }
+  
+  .table-header div:nth-child(5),
+  .table-header div:nth-child(6),
+  .table-header div:nth-child(7),
+  .table-row .status-cell,
+  .table-row .priority-cell,
+  .table-row .time-cell {
+    display: none;
+  }
+  
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .monitoring-container {
+    padding: 1rem;
+  }
+  
+  .filter-tabs {
+    flex-direction: column;
+  }
+  
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .table-header div:nth-child(n+3),
+  .table-row div:nth-child(n+3) {
+    display: none;
+  }
+  
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
