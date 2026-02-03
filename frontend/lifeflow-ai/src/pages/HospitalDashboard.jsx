@@ -28,11 +28,12 @@ const HospitalDashboard = () => {
         <div className="hospital-title">
           <h1>City General Hospital</h1>
           <p>Managing critical blood supply and donor coordination</p>
-        </div>
+          <br></br>
 
-         <div className="map">      
-        <Link to="/live-map" className="view-analytics-btn">Live Map</Link>
-       </div>
+          <div className='map'>
+                    <Link to="/live-map" className="map-btn">Live Map</Link>
+          </div>
+        </div>
 
         <div className="hospital-layout">
           {/* Left Column */}

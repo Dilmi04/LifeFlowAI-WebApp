@@ -13,6 +13,7 @@ import RequestMonitoring from "../pages/RequestMonitoring";
 import Analytics from "../pages/Analytics";
 import LiveMap from "../pages/LiveMap";
 import HelpFAQ from "../pages/HelpFAQ";
+import DonorProfile from "../pages/DonorProfile";
 
 export default function AppRoutes() {
   return (
@@ -27,10 +28,11 @@ export default function AppRoutes() {
         <Route path="/hospital-dashboard" element={<HospitalDashboard />} />
         <Route path="/emergency-alert" element={<EmergencyAlert />} />
         <Route path="/create-request" element={<CreateRequest />} />
-        <Route path="/monitor-request" element={<RequestMonitoring />} />
+        <Route path="/request-monitoring" element={<RequestMonitoring />} />
         <Route path="/analytics" element={<Analytics />} />
         <Route path="/live-map" element={<LiveMap />} />
         <Route path="/help" element={<HelpFAQ />} />
+        <Route path="/donor-profile" element={<DonorProfile />} />
       </Routes>
     </BrowserRouter>
   );

@@ -76,8 +76,8 @@ const LandingPage = () => {
           
           <div className="features-grid">
             <div className="feature-card emergency">
-              <h3>Emergency Request</h3>
-              <p>
+              <h3 align="center">Emergency Request</h3>
+              <p align="center">
                 Hospitals submit urgent<br />
                 emergency blood requests.<br />
                 Our AI instantly analyzes<br />
@@ -87,8 +87,8 @@ const LandingPage = () => {
             </div>
             
             <div className="feature-card prioritization">
-              <h3>AI Prioritization</h3>
-              <p>
+              <h3 align="center">AI Prioritization</h3>
+              <p align="center">
                 Smart algorithms identify<br />
                 and alerts suitable donors<br />
                 based on proximity,<br />
@@ -98,8 +98,8 @@ const LandingPage = () => {
             </div>
             
             <div className="feature-card connection">
-              <h3>Instant Connection</h3>
-              <p>
+              <h3 align="center">Instant Connection</h3>
+              <p align="center">
                 Real-time matching alerts,<br />
                 donor requests, and coordinate<br />
                 life-saving donations within<br />
@@ -118,8 +118,8 @@ const LandingPage = () => {
           
           <div className="benefits-grid">
             <div className="benefit-card">
-              <h4>AI-Powered Matching</h4>
-              <p>
+              <h4 align="center">AI-Powered Matching</h4>
+              <p align="center">
                 Intelligent algorithms<br />
                 find the best donor<br />
                 instantly based on<br />
@@ -128,8 +128,8 @@ const LandingPage = () => {
             </div>
             
             <div className="benefit-card">
-              <h4>Lightning Fast</h4>
-              <p>
+              <h4 align="center">Lightning Fast</h4>
+              <p align="center">
                 Donor alerts sent in<br />
                 less under 12 minutes<br />
                 on average
@@ -137,8 +137,8 @@ const LandingPage = () => {
             </div>
             
             <div className="benefit-card">
-              <h4>Location-Based</h4>
-              <p>
+              <h4 align="center">Location-Based</h4>
+              <p align="center">
                 Prioritizes donors<br />
                 based on proximity<br />
                 to emergency<br />
@@ -147,8 +147,8 @@ const LandingPage = () => {
             </div>
             
             <div className="benefit-card">
-              <h4>100% Reliable</h4>
-              <p>
+              <h4 align="center">100% Reliable</h4>
+              <p align="center">
                 24/7 emergency<br />
                 support with verified<br />
                 donor networks

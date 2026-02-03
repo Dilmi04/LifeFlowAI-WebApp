@@ -929,6 +929,16 @@
   color: #666;
 }
 
+.map-btn{
+  background: #E63946;
+  color: white;
+  padding: 0.55rem 1.5rem;
+  margin-left: 100px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .hospital-layout {
   display: grid;
   grid-template-columns: 1fr 400px;
