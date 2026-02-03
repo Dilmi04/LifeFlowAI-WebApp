@@ -137,21 +137,21 @@ const DonorDashboard = () => {
                 <div className="donation-item">
                   <div>
                     <strong>St. Mary's Hospital</strong>
-                    <p>November 15, 2023</p>
+                    <p>December 15, 2025</p>
                   </div>
                   <span className="status-completed">Completed</span>
                 </div>
                 <div className="donation-item">
                   <div>
                     <strong>City General Hospital</strong>
-                    <p>September 8, 2023</p>
+                    <p>November 8, 2025</p>
                   </div>
                   <span className="status-completed">Completed</span>
                 </div>
                 <div className="donation-item">
                   <div>
                     <strong>Memorial Medical Center</strong>
-                    <p>July 3, 2023</p>
+                    <p>July 3, 2025</p>
                   </div>
                   <span className="status-completed">Completed</span>
                 </div>
@@ -164,7 +164,7 @@ const DonorDashboard = () => {
             {/* Next Eligible Donation */}
             <Link to="/donor-profile" className="next-donation-card">
               <h3>Next Eligible Donation</h3>
-              <p className="date-large">March 15, 2024</p>
+              <p className="date-large">March 15, 2026</p>
               <p className="days-left">In 45 days</p>
             </Link>
 
