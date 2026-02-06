@@ -30,19 +30,22 @@ During emergency situations, hospitals often struggle to find suitable blood don
 - React.js
 - Tailwind CSS
 - HTML5, CSS, JavaScript
+- React Router DOM (for client-side routing)
 
 **Backend**
-- Firebase Authentication
-- Firebase Firestore (Database)
-- 
+- Node.js
+- Express.js
+- RESTful APIs
+- MongoDB (planned / optional for future enhancement)
+  
 **AI & Intelligent Features**
 - AI-powered chatbot (API-based / rule-based)
 - Intelligent donor prioritization logic
-- Basic analytics and demand insights (mock & prototype-level)
+- Emergency request matching & analytics (prototype-level)
 
 **Deployment**
 - Frontend: Vercel
-- Backend: Firebase
+- Backend: Railway
 
 **Version Control & Collaboration**
 - Git & GitHub for source code management
