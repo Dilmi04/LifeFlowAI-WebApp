@@ -1,0 +1,23 @@
+{
+  "name": "lifeflowai-webapp",
+  "version": "1.0.0",
+  "description": "LifeFlow AI is an AI-powered web application designed to improve emergency blood donation coordination by intelligently connecting hospitals with nearby eligible donors.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dilmi04/LifeFlowAI-WebApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dilmi04/LifeFlowAI-WebApp/issues"
+  },
+  "homepage": "https://github.com/Dilmi04/LifeFlowAI-WebApp#readme"
+}

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import LandingPage from "../pages/LandingPage";
 import LoginDonor from "../pages/LoginDonor";
@@ -14,26 +14,26 @@ import Analytics from "../pages/Analytics";
 import LiveMap from "../pages/LiveMap";
 import HelpFAQ from "../pages/HelpFAQ";
 import DonorProfile from "../pages/DonorProfile";
+import Chatbot from "../pages/Chatbot";
 
 export default function AppRoutes() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/login-donor" element={<LoginDonor />} />
-        <Route path="/login-hospital" element={<LoginHospital />} />
-        <Route path="/signup-donor" element={<SignupDonor />} />
-        <Route path="/signup-hospital" element={<SignupHospital />} />
-        <Route path="/donor-dashboard" element={<DonorDashboard />} />
-        <Route path="/hospital-dashboard" element={<HospitalDashboard />} />
-        <Route path="/emergency-alert" element={<EmergencyAlert />} />
-        <Route path="/create-request" element={<CreateRequest />} />
-        <Route path="/request-monitoring" element={<RequestMonitoring />} />
-        <Route path="/analytics" element={<Analytics />} />
-        <Route path="/live-map" element={<LiveMap />} />
-        <Route path="/help" element={<HelpFAQ />} />
-        <Route path="/donor-profile" element={<DonorProfile />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/login-donor" element={<LoginDonor />} />
+      <Route path="/login-hospital" element={<LoginHospital />} />
+      <Route path="/signup-donor" element={<SignupDonor />} />
+      <Route path="/signup-hospital" element={<SignupHospital />} />
+      <Route path="/donor-dashboard" element={<DonorDashboard />} />
+      <Route path="/hospital-dashboard" element={<HospitalDashboard />} />
+      <Route path="/emergency-alert" element={<EmergencyAlert />} />
+      <Route path="/create-request" element={<CreateRequest />} />
+      <Route path="/request-monitoring" element={<RequestMonitoring />} />
+      <Route path="/analytics" element={<Analytics />} />
+      <Route path="/live-map" element={<LiveMap />} />
+      <Route path="/help" element={<HelpFAQ />} />
+      <Route path="/donor-profile" element={<DonorProfile />} />
+      <Route path="/chatbot" element={<Chatbot />} />
+    </Routes>
   );
 }

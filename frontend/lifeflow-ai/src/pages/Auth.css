@@ -118,6 +118,7 @@
   background: transparent;
   color: #666;
   transition: all 0.3s;
+  text-align: center;
 }
 
 .toggle-btn.active {
